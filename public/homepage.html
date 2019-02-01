@@ -301,7 +301,7 @@
 					$("#dog"+a+"profile").hide();
 				}
 				
-				$.get("http://127.0.0.1:3000/park", function(data){
+				$.get("https://pawfect-pairs1.herokuapp.com/park", function(data){
 					dogNumber = data.length;
 					var dogs = JSON.stringify(data);
 					//alert (dogs);
@@ -325,7 +325,7 @@
 					$("#s"+number).replaceWith('<div id = "sniffed">You have sniffed their butt!</div>');
 					var id = $('#dog'+number+"owner").prop('innerHTML'); // this is sending dog not owner !!
 					var info = {"sniffer":current_account, "sniffed":id};
-					$.post("http://127.0.0.1:3000/sniff", info, function(data){
+					$.post("https://pawfect-pairs1.herokuapp.com/sniff", info, function(data){
 							//	here?? leave blank?? 								
 					});
 				}
@@ -346,7 +346,7 @@
 				<!-- $("#w"+number).replaceWith('<div id = "woofed">You have sent a woof!</div>') -->
 				<!-- var id = $('#dog'+number+"owner").prop('innerHTML'); -->
 				<!-- var info = {"woofer":current_account, "woofed":id}; -->
-				<!-- $.post("http://127.0.0.1:3000/woof", info, function(data){ -->
+				<!-- $.post("https://pawfect-pairs1.herokuapp.com/woof", info, function(data){ -->
 					<!-- alert(data);				 -->
 				<!-- }); -->
 			<!-- } -->
@@ -356,7 +356,7 @@
 				<!-- $("#ww"+number).replaceWith('<div id = "woofed">You have sent a woof!</div>'); -->
 				<!-- var pre_info = $("#message").serialize(); -->
 				<!-- var info = {"woofer":current_account, "woofed":id, "message": $("#messageID").val()}; -->
-				<!-- $.post("http://127.0.0.1:3000/woof", info, function(data){ -->
+				<!-- $.post("https://pawfect-pairs1.herokuapp.com/woof", info, function(data){ -->
 					<!-- alert(data);				 -->
 				<!-- }); -->
 				<!-- return false; -->
@@ -370,7 +370,7 @@
 				<!-- var info = {"woofer":current_account, "woofed":id, "message": $("#messageID"+woofFunctionNumber).val()}; -->
 				<!-- var id = $('#m'+number).prop('innerHTML'); -->
 				
-				<!-- $.post("http://127.0.0.1:3000/woof", info, function(data){ -->
+				<!-- $.post("https://pawfect-pairs1.herokuapp.com/woof", info, function(data){ -->
 					<!-- alert(data);				 -->
 				<!-- }); -->
 				<!-- return false; -->
@@ -384,7 +384,7 @@
 				var number = woofFunctionName;
 				
 				var info = {"current":current_account, "second": number, "park": $("#select_park").val(), "day": $("#select_day").val()};
-				$.post("http://127.0.0.1:3000/meet", info, function(data){
+				$.post("https://pawfect-pairs1.herokuapp.com/meet", info, function(data){
 					//alert(JSON.stringify(data));			
 				});			
 			}
@@ -393,7 +393,7 @@
 				$("#accepted").replaceWith('<div id = "accepted1">Accepted! Woof woof!</div>');
 				//"second": $("#playname1").val()
 				var info = {"current": current_account};
-				$.get("http://127.0.0.1:3000/acceptmeet", info, function(data){
+				$.get("https://pawfect-pairs1.herokuapp.com/acceptmeet", info, function(data){
 					
 				});
 			});
@@ -403,7 +403,7 @@
 				$(".my-meets").show();
 				$("#play_request").hide();
 				$("#confirmed_play").hide();
-				$.get("http://127.0.0.1:3000/meetings", function(data){
+				$.get("https://pawfect-pairs1.herokuapp.com/meetings", function(data){
 					//alert (JSON.stringify(data));
 					
 					for (i = 0; i< data.length; i++){
@@ -444,7 +444,7 @@
 					$("#sniffBack"+a).hide();
 				}
 				info = {"current":current_account};
-				$.get("http://127.0.0.1:3000/matches", info, function(data){
+				$.get("https://pawfect-pairs1.herokuapp.com/matches", info, function(data){
 					var mutualSniffs = data[0];
 					for (i = 0; i < data[0].length; i++){						
 						a = i+1;
@@ -471,7 +471,7 @@
 			//LOGIN
 			$("#login_form").on("submit",function(){
 				var info = $("#login_form").serialize();
-				$.get("http://127.0.0.1:3000/login", info, function(data){
+				$.get("https://pawfect-pairs1.herokuapp.com/login", info, function(data){
 					if(data === false){
 						$("#error").text("Either the username or password is incorrect");
 					}
@@ -492,7 +492,7 @@
 				$("#welcome_back").html(data);
 				$(".bar").show();
 				var info = $("#makeaccount").serialize();
-				$.post("http://127.0.0.1:3000/people", {
+				$.post("https://pawfect-pairs1.herokuapp.com/people", {
 							forename: $("#fname1").val(),
 							surname: $("#sname1").val(),
 							username: $("#uname1").val(),
