@@ -1,0 +1,169 @@
+body {
+  background-color: #D0F3D5;
+}
+
+img.image {
+	padding: 5px;
+	display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+h1 {
+	text-align: center;
+	color: #C0C0C0;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-weight: 700;
+	font-size: 24px;
+}
+
+div.input{
+	text-align: center;
+	padding: 25px;
+}
+
+div.signup{
+	text-align: center;
+	padding: 25px;
+}
+
+#rev1{
+	padding: 50px;
+	border: 20px #ED85D4;
+	color: black;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-weight: 700;
+	font-size: 14px;
+}
+#rev2{
+	padding: 50px;
+	border: 20px #ED85D4;
+	color: black;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-weight: 700;
+	font-size: 14px;
+}
+#rev3{
+	padding: 50px;
+	border: 20px #ED85D4;
+	color: black;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-weight: 700;
+	font-size: 14px;
+}
+
+#homeContainer{
+	min-height: 100%;
+	overflow: hidden;
+}
+
+#mainCol {
+	margin-bottom: -9999px;
+	padding-bottom: 9999px;
+}
+
+#dog1park {
+	background-color: #ED85D4;
+}
+
+#reviews {
+	margin-bottom: -9999px;
+	padding-bottom: 9999px;
+	background: -webkit-linear-gradient(#FFBFE3, #FFFFFF);
+}
+
+#makeaccount{
+	
+	text-align: center;
+}
+
+button.button1 {
+  background-color: #FFFFFF;
+  border: none;
+  color: #ED85D4;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 4px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-weight: 700;
+}
+button.button2 {
+  background-color: #FFFFFF;
+  border: none;
+  color: #ED85D4;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 4px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-weight: 700;
+}
+button.button3 {
+  background-color: #FFFFFF;
+  border: none;
+  color: #ED85D4;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 4px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-weight: 700;
+}
+
+#dog1profile, #dog5profile, #dog9profile, #match1, #sniffBack3{
+	padding: 20px;
+	border: 20px #ED85D4;
+	color: black;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-weight: 700;
+	font-size: 14px;
+	background-color: #FFA5F3;	
+}
+
+#dog2profile, #dog6profile, #dog7profile, #match2, #sniffBack1{
+	padding: 20px;
+	border: 20px #ED85D4;
+	color: black;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-weight: 700;
+	font-size: 14px;
+	background-color: #FFCDF8;	
+}
+
+#dog3profile, #dog4profile, #dog8profile, #match3, #sniffBack2{
+	padding: 20px;
+	border: 20px #ED85D4;
+	color: black;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-weight: 700;
+	font-size: 14px;
+	background-color: #FFE2FB;	
+}
+
+#s1, #s2, #s3, #s4, #s5, #s6, #s7, #s8, #s9, #ww1, #ww2, #ww3{
+	background-color: #FFFFFF;
+	border: none;
+	color: #ED85D4;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 12px;
+	border-radius: 3px;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-weight: 600;	
+}
+
+#play_request, #confirmed_play{
+	padding: 20px;
+	border: 20px #ED85D4;
+	color: black;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-weight: 700;
+	font-size: 14px;	
+	text-align: center;
+	background-color:  #FFE2FB;
+}
+
+div.login_home{
+	
+	text-align: center;
+	color: #C0C0C0;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-weight: 700;
+	font-size: 24px;
+}
