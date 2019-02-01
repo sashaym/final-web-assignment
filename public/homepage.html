@@ -301,7 +301,7 @@
 					$("#dog"+a+"profile").hide();
 				}
 				
-				$.get("https://pawfect-pairs1.herokuapp.com/park", function(data){
+				$.get("https://final-pawfect-pairs.herokuapp.com/park", function(data){
 					dogNumber = data.length;
 					var dogs = JSON.stringify(data);
 					//alert (dogs);
@@ -325,7 +325,7 @@
 					$("#s"+number).replaceWith('<div id = "sniffed">You have sniffed their butt!</div>');
 					var id = $('#dog'+number+"owner").prop('innerHTML'); // this is sending dog not owner !!
 					var info = {"sniffer":current_account, "sniffed":id};
-					$.post("https://pawfect-pairs1.herokuapp.com/sniff", info, function(data){
+					$.post("https://final-pawfect-pairs.herokuapp.com/sniff", info, function(data){
 							//	here?? leave blank?? 								
 					});
 				}
@@ -384,7 +384,7 @@
 				var number = woofFunctionName;
 				
 				var info = {"current":current_account, "second": number, "park": $("#select_park").val(), "day": $("#select_day").val()};
-				$.post("https://pawfect-pairs1.herokuapp.com/meet", info, function(data){
+				$.post("https://final-pawfect-pairs.herokuapp.com/meet", info, function(data){
 					//alert(JSON.stringify(data));			
 				});			
 			}
@@ -393,7 +393,7 @@
 				$("#accepted").replaceWith('<div id = "accepted1">Accepted! Woof woof!</div>');
 				//"second": $("#playname1").val()
 				var info = {"current": current_account};
-				$.get("https://pawfect-pairs1.herokuapp.com/acceptmeet", info, function(data){
+				$.get("https://final-pawfect-pairs.herokuapp.com/acceptmeet", info, function(data){
 					
 				});
 			});
@@ -403,7 +403,7 @@
 				$(".my-meets").show();
 				$("#play_request").hide();
 				$("#confirmed_play").hide();
-				$.get("https://pawfect-pairs1.herokuapp.com/meetings", function(data){
+				$.get("https://final-pawfect-pairs.herokuapp.com/meetings", function(data){
 					//alert (JSON.stringify(data));
 					
 					for (i = 0; i< data.length; i++){
@@ -444,7 +444,7 @@
 					$("#sniffBack"+a).hide();
 				}
 				info = {"current":current_account};
-				$.get("https://pawfect-pairs1.herokuapp.com/matches", info, function(data){
+				$.get("https://final-pawfect-pairs.herokuapp.com/", info, function(data){
 					var mutualSniffs = data[0];
 					for (i = 0; i < data[0].length; i++){						
 						a = i+1;
@@ -471,7 +471,7 @@
 			//LOGIN
 			$("#login_form").on("submit",function(){
 				var info = $("#login_form").serialize();
-				$.get("https://pawfect-pairs1.herokuapp.com/login", info, function(data){
+				$.get("https://final-pawfect-pairs.herokuapp.com/login", info, function(data){
 					if(data === false){
 						$("#error").text("Either the username or password is incorrect");
 					}
@@ -492,7 +492,7 @@
 				$("#welcome_back").html(data);
 				$(".bar").show();
 				var info = $("#makeaccount").serialize();
-				$.post("https://pawfect-pairs1.herokuapp.com/people", {
+				$.post("https://final-pawfect-pairs.herokuapp.com/people", {
 							forename: $("#fname1").val(),
 							surname: $("#sname1").val(),
 							username: $("#uname1").val(),
